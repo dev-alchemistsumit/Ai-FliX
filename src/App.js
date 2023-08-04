@@ -6,6 +6,8 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
+//clean Architecture
+
     <div className="App">
       <Router>
         <Switch>
