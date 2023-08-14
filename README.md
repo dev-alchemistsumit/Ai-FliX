@@ -12,8 +12,6 @@
 
 <div style="display: inline_block" align="center"><br>
 
-![image](https://github.com/thesumitsuryawanshi/Ai-Flix-Webapp/assets/58788722/7a1b8e1f-34d4-4638-a9b2-b963dcf68264)
-
 ## <a href="https://ai-flix-678f3.web.app/" target="_blank">LIVE DEMO 💥</a>
 
 
