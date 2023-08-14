@@ -24,8 +24,7 @@ function Movies() {
   };
 
   // initializeApp(firebaseConfig);
-initializeApp(firebaseConfig);
-
+  initializeApp(firebaseConfig);
 
   const db = getFirestore();
   const colRef = collection(db, "Movies");
@@ -49,6 +48,7 @@ initializeApp(firebaseConfig);
       unsubscribe();
     };
   }, []);
+
 
   function UpVoteClick(index) {
     const updatedMovieData = [...movieData];
@@ -85,29 +85,22 @@ initializeApp(firebaseConfig);
   function sortMoviesByScoreDescending(movies) {
     return movies.slice().sort((a, b) => b.score - a.score);
   }
-
   return (
     <Container>
-      <h1> Latest Movies </h1>
-      <Content>
-        {/* Sort movieData in descending order based on the score */}
-        {movieData
-          .slice()
-          .sort((a, b) => b.score - a.score)
-          .map((doc, index) => (
-            <div key={doc.id}>
-              <CardStyling>
-                <Card 
-                  title={doc.title}
-                  videoUrl={doc.videoUrl}
-                  desc={doc.desc}
-                  score={doc.score}
-                  upVoteClicked={() => UpVoteClick(index)}
-                  downVoteClicked={() => DownVoteClick(index)}
-                />
-              </CardStyling>
-            </div>
-          ))}
+      <h1 className="flex flex-initial m-3 text-3xl font-serif text-white"> Latest Movies </h1>
+      <Content >
+        {movieData.map((doc, index) => (
+          <CardStyling key={doc.id}  className="flex justify-center">
+            <Card className="justify-center"
+              title={doc.title}
+              videoUrl={doc.videoUrl}
+              desc={doc.desc}
+              score={doc.score}
+              upVoteClicked={() => UpVoteClick(index)}
+              downVoteClicked={() => DownVoteClick(index)}
+            />
+          </CardStyling>
+        ))}
       </Content>
     </Container>
   );
@@ -116,63 +109,19 @@ initializeApp(firebaseConfig);
 export default Movies;
 
 const Container = styled.div`
-  padding: 0 0 26px;
+  padding: 0 20px 26px;
 `;
 
-const CardStyling = styled.div``;
+const CardStyling = styled.div`
+  
+`;
 
 const Content = styled.div`
   display: grid;
   grid-gap: 25px;
-  gap: 25px;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+  grid-template-columns: repeat( 3, minmax(300px, 1fr))
+  ; /* Responsive grid */
   @media (max-width: 768px) {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-`;
-
-const CardContainer = styled.div`
-  
-  display: grid;
-  grid-gap: 25px;
-
-  grid-template-columns: repeat(5, minmax(0, 1fr));
- 
-  @media (width: 768px) {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  
-  @media screen and (max-width: 991px){
-    grid-template-columns: repeat(1, minmax(0, 1fr));
-`;
-
-const Wrap = styled.div`
-  padding-top: 56.25%;
-  border-radius: 10px;
-  box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
-    rgb(0 0 0 / 73%) 0px 16px 10px -10px;
-  cursor: pointer;
-  overflow: hidden;
-  position: relative;
-  transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
-  border: 3px solid rgba(249, 249, 249, 0.1);
-  img {
-    inset: 0px;
-    display: block;
-    height: 100%;
-    object-fit: cover;
-    opacity: 1;
-    position: absolute;
-    transition: opacity 500ms ease-in-out 0s;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-  }
-  &:hover {
-    box-shadow: rgb(0 0 0 / 80%) 0px 40px 58px -16px,
-      rgb(0 0 0 / 72%) 0px 30px 22px -10px;
-    border-color: rgba(249, 249, 249, 0.8);
-    transform: scale(1.15);
-  }
-`;
+    grid-template-columns: repeat(1, minmax(0, 1fr)); /* Single column on small screens */
+  }-+ 
+  `;

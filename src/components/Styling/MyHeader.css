@@ -1,15 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* MyHeader.css */
 
+
 .header-container {
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
-  justify-content: center;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  color: white;
-  border-radius:15px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 font-family: 'Courier New', Courier, monospace;
-background-color: rgb(0, 8, 46);
 box-shadow: 2px 12px  122px 12px #4935ff;
 }
 
@@ -34,11 +33,13 @@ box-shadow: 2px 12px  122px 12px #4935ff;
 .nav-menu li {
   border-radius: 20px;
   transform: scale(1.05);
-  padding: 15px;
-  margin: 0 15px;
+  padding: 10px;
+  margin: 0 5px;
   position: relative;
   font-weight: bold;
   font-size: 18px;
+  padding: 15px;
+  margin-right: 15px;
 }
 
 .nav-menu a {
@@ -53,26 +54,26 @@ box-shadow: 2px 12px  122px 12px #4935ff;
 }
 
 .icon {
-  margin-left: 5px;
   font-size: 20px;
 }
 
 .sign-out-container {
-  display: flex;
-  flex: content;
-  justify-content: end;
-font-family: 'Courier New', Courier, monospace;
+  flex: start;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .sign-out-button {
-    font-family: 'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
   background-color: transparent;
+  width: max-content;
   border: none;
   color: white;
   font-weight: bold;
   cursor: pointer;
   font-size: 18px;
   transition: color 0.3s ease-in-out;
+  padding: 5px 10px;
+  margin: 0 5px;
 }
 
 .sign-out-button:hover {
@@ -85,8 +86,8 @@ font-family: 'Courier New', Courier, monospace;
 
 }
 
-
 .nav-menu li:hover {
   background-color: #e21515;
   transform: scale(1.05);
 }
+

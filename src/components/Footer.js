@@ -1,55 +1,91 @@
-import React from 'react'
-import styled from 'styled-components'
-import logo from '../assets/logo.png';
+import React from "react";
+import styled from "styled-components";
+import logoborder from "../assets/logo-border.png";
 
 const Footer = () => {
   return (
     <>
-    <Section>
-      <Container>   
+      <Section >
+        <Container className="flex flex-col m-3">
+          <div className="flex-none grid m-5 border-white 	">
+            <FooterBrand  className="place-self-center shadow-xl
+             shadow-indigo-700/50">
+              <img src={logoborder} alt="" />
+            </FooterBrand>
+          </div>
 
-        <FooterBrand><img src={logo} height="90px" width="200px" alt=''/></FooterBrand>
-        <Nav>
-          <li><p>English</p></li>
-          <li><p>Subscriber Agreement</p></li>
-          <li><p>Privacy Policy</p></li>
-          <li><p>Your California Privacy</p></li>
-          <li><p>Do Not Sell My Info</p></li>
-          <li><p>Children's Online Privacy Policy</p></li>
-          <li><p>Closed Captioning</p></li>
-          <li><p>Interest-Based-Ads</p></li>
-          <li><p>Supported Devices</p></li>
-          <li><p>Help</p></li>
-          <li><p>Gift AiFlix+</p></li>
-          <li><p>About US</p></li>
-          <li><p>Premier Access</p></li>
-          <li><p>The AiFlix Bundle</p></li>
-        </Nav>
-        <CopyRight>
-          <p> @AiFlix ❤️.<br/> <br/> All Rights Reserved</p>
-        </CopyRight>
-      </Container>
-    </Section>
+          <Nav className="flex-none">
+            <li>
+              <p>English</p>
+            </li>
+            <li>
+              <p>Subscriber Agreement</p>
+            </li>
+            <li>
+              <p>Privacy Policy</p>
+            </li>
+            <li>
+              <p>Your California Privacy</p>
+            </li>
+            <li>
+              <p>Do Not Sell My Info</p>
+            </li>
+            <li>
+              <p>Children's Online Privacy Policy</p>
+            </li>
+            <li>
+              <p>Closed Captioning</p>
+            </li>
+            <li>
+              <p>Interest-Based-Ads</p>
+            </li>
+            <li>
+              <p>Supported Devices</p>
+            </li>
+            <li>
+              <p>Help</p>
+            </li>
+            <li>
+              <p>Gift AiFlix+</p>
+            </li>
+            <li>
+              <p>About US</p>
+            </li>
+            <li>
+              <p>Premier Access</p>
+            </li>
+            <li>
+              <p>The AiFlix Bundle</p>
+            </li>
+          </Nav>
+          <CopyRight className="flex-none">
+            <p>
+              @AiFlix ❤️.
+              <br /> <br /> All Rights Reserved
+            </p>
+          </CopyRight>
+        </Container>
+      </Section>
     </>
-  )
-}
+  );
+};
 
 const Section = styled.section`
-padding: 2rem;
-margin-bottom: 0;
+  padding: 2rem;
+  margin-bottom: 0;
 
-@media screen and (max-width: 500px)  {
-  padding: 1rem;
-}
+  @media screen and (max-width: 500px) {
+    padding: 1rem;
+  }
 `;
 
 const Container = styled.div`
-width: 95%;
-margin: 0 auto;
+  width: 95%;
+  margin: 0 auto;
 `;
 
 const FooterBrand = styled.div`
-text-align: center;
+  text-align: center;
 
   img {
     width: 10rem;
@@ -71,15 +107,15 @@ const Nav = styled.nav`
   flex-grow: initial;
   justify-content: center;
 
-  li{
+  li {
     list-style: none;
 
-    p{
+    p {
       padding: 0.5rem;
       font-size: 0.9rem;
       margin-right: 0.3rem;
 
-      @media screen and (max-width: 500px){
+      @media screen and (max-width: 500px) {
         font-size: 0.75rem;
         padding: 0.1rem;
       }
@@ -87,22 +123,17 @@ const Nav = styled.nav`
   }
 `;
 
-
 const CopyRight = styled.div`
   text-align: center;
 
-  p{
+  p {
     margin-top: 1vh;
     font-weight: 400 !important;
 
-    @media screen and (max-width: 500px){
+    @media screen and (max-width: 500px) {
       font-size: 0.95rem;
     }
   }
+`;
 
-  
-`
-
-;
-
-export default Footer
+export default Footer;
