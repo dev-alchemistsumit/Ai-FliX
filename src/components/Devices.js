@@ -26,7 +26,7 @@ function Devices() {
 
                         {
                             getDevice.map((img, index) => (
-                                <Image key={index}><img src={img.imgSrc} alt={img.imgSrc} /><h2>{img.tittle}</h2></Image>
+                                <Image key={index}><img src={img.imgSrc} alt={img.imgSrc}  className='mb-5'/><h2>{img.tittle}</h2></Image>
                             ))
                         }
 

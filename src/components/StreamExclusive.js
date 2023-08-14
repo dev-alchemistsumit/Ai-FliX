@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import coverImg from '../assets/Grid_Images/Cover_Image.png';
+import coverImg2 from '../assets/Grid_Images/Cover_Image2.png';
 
 import AC_final from '../assets/Grid_Images/AC-final.jpg';
 import NS_fotor from '../assets/Grid_Images/NS-fotor.png';
@@ -20,29 +20,27 @@ const Stream_Exclusive = () => {
 
   return (
     <>
-      <Section>
-        <Container>
-          <Tittle style={{ marginBottom: '100px' }}>
-          <img src={coverImg}  height= '160px' width= '990px' alt='grid/img' />
+      <div className=''>
+        <div >
+          <div className=' p-5 flex justify-center'>
+          <img src={coverImg2}  alt='grid/img' />
             {/* <h2 className='disney-tittles'>Ai-Flix</h2> */}
         {/* ?    <p>An Flawless Creation of Webseries & Movies by Artificial intelligence <br/> & <br/> there collection only on Ai-Flix.</p> */}
-          </Tittle>
+          </div>
 
-          <GridImg>
-          <Image ><img src={AC_final} alt='grid/img' /></Image>
-          <Image ><img src={NS_fotor} alt='grid/img' /></Image>
-          <Image ><img src={PH_fotor} alt='grid/img' /></Image>
+          <GridImg className='m-8 md:m-32 rounded-2xl'>
+          <div  ><img src={SS_fotor}  alt='grid/img' className='md:p-16  hover:border-2 p-3 rounded-2xl hover:border-white '/></div>
+          <div ><img src={NS_fotor}  alt='grid/img'  className='md:p-16  hover:border-2 p-3 rounded-2xl hover:border-white ' /></div>
+          <div ><img src={PH_fotor}  alt='grid/img'  className='md:p-16  hover:border-2 p-3 rounded-2xl hover:border-white ' /></div>
+          <div ><img src={Machine}  alt='grid/img'   className='md:p-16  hover:border-2 p-3 rounded-2xl hover:border-white ' /></div>
+          <div ><img src={QN_fotor} alt='grid/img'   className='md:p-16  hover:border-2 p-3 rounded-2xl hover:border-white ' /></div>          
+          <div ><img src={WA_fotor} alt='grid/img'   className='md:p-16  hover:border-2 p-3 rounded-2xl hover:border-white ' /></div>
+          <div ><img src={Cubie}    alt='grid/img'   className='md:p-16  hover:border-2 p-3 rounded-2xl hover:border-white ' /></div>
+          <div ><img src={KOALA}    alt='grid/img'   className='md:p-16  hover:border-2 p-3 rounded-2xl hover:border-white '/></div>
 
-          <Image ><img src={QN_fotor} alt='grid/img' /></Image>
-          <Image ><img src={SS_fotor} alt='grid/img' /></Image>
-          <Image ><img src={WA_fotor} alt='grid/img' /></Image>
-
-          <Image ><img src={KOALA} alt='grid/img' /></Image>
-          <Image ><img src={Cubie} alt='grid/img' /></Image>
-          <Image ><img src={Machine} alt='grid/img' /></Image>
           </GridImg>
-        </Container>
-      </Section>
+        </div>
+      </div>
     </>
   )
 }
@@ -55,7 +53,7 @@ const Section = styled.section`
 `;
 
 const Container = styled.div`
-  width: 95%;
+  width: 100%;
 ---------------------------------------------
 
 
@@ -79,7 +77,7 @@ const GridImg = styled.div`
   display: grid;
   gap: 15px 25px;
   
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 
   @media screen and (max-width: 991px){
     grid-template-columns: repeat(2, minmax(0, 1fr));

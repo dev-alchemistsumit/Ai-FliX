@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../assets/logo.png';
+import logoborder from "../assets/logo-border.png";
 import styled from 'styled-components'
 
 function Advertisement() {
@@ -9,7 +9,9 @@ function Advertisement() {
       <Section>
         <Container>
 
-        <FooterBrand><img src={logo} height="190px" width="300px" alt='Ai Flix Logo'/></FooterBrand>
+        <FooterBrand className='m-2'><img src={logoborder} height="190px" 
+        width="300px" alt='Ai Flix Logo'
+         className='m-3 shadow-xl shadow-indigo-700/50 mb-8' /></FooterBrand>
 
           <ImageIndore>
           </ImageIndore>
@@ -57,7 +59,6 @@ const ImageIndore = styled.div`
   width: 48%;
   flex: 0 auto;
   opacity: 1;
-  z-index: 1500;
 
   @media screen and (max-width: 991px){
     width: 100%;
@@ -76,7 +77,6 @@ const TextInfo = styled.div`
   width: 48%;
   flex: 0 auto;
   opacity: 1;
-  z-index: 1500;
 
   @media screen and (max-width: 991px){
     width: 100%;

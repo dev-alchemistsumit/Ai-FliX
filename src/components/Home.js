@@ -11,10 +11,11 @@ import MyHeader from "./MyHeader";
 
 const Home = () => {
   return (
-    <div>
-      <MyHeader />
-
-      <Container>
+    <div className="flex flex-col">
+      <HeaderContainer className=" fixed  z-[20] md:static  ">
+        <MyHeader />
+      </HeaderContainer>
+      <Container  className="">
         <ImgSlider />
         <Viewers />
         <Movies />
@@ -50,4 +51,10 @@ const HeaderStyle = styled.main`
   margin: 50px;
 `;
 
+const HeaderContainer = styled.main`
+  transition: transform 0.6s ease-in-out;
+  top: 1rem; 
+  left: 1rem;
+  right: 1rem;
+  `;
 export default Home;
