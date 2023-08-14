@@ -4,13 +4,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 
-import unicorn from "../assets/img slider/unicorn.png";
-import dragonRobo from "../assets/img slider/firedragon.jpg";
-import robo_in_space from "../assets/img slider/robo_in_space.png";
-import space_flower from "../assets/img slider/space_flower.png";
-import spaceship from "../assets/img slider/spaceship_in_space.png";
-import ai_girl from "../assets/img slider/ai_girl.png";
-import fighting from "../assets/img slider/fighting.png";
+import unicorn from "../../assets/img slider/unicorn.png";
+import dragonRobo from "../../assets/img slider/firedragon.jpg";
+import robo_in_space from "../../assets/img slider/robo_in_space.png";
+import space_flower from "../../assets/img slider/space_flower.png";
+import spaceship from "../../assets/img slider/spaceship_in_space.png";
+import ai_girl from "../../assets/img slider/ai_girl.png";
+import fighting from "../../assets/img slider/fighting.png";
 
 function ImgSlider() {
     let settings = {

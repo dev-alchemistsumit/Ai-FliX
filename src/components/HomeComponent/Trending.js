@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { getFirestore, collection, onSnapshot, updateDoc, doc } from 'firebase/firestore';
-import Card from '../reddit_Components/Card';
+import Card from '../../reddit_Components/Card';
 import { initializeApp } from "firebase/app";
 
 export default function Trending() {

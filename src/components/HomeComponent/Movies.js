@@ -10,7 +10,7 @@ import {
   doc,
 } from "firebase/firestore";
 import { getDatabase, ref, onValue, set , } from "firebase/database";
-import Card from "../reddit_Components/Card";
+import Card from "../../reddit_Components/Card";
 import { initializeApp } from "firebase/app";
 
 function Movies() {

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import logo from "../assets/logo.png";
-import burger from "../assets/burger.svg";
+import logo from "../../assets/logo.png";
+import burger from "../../assets/burger.svg";
 import "./Styling/MyHeader.css"; // Create a CSS file for styling
 import { CgMenuLeftAlt, CgClose } from "react-icons/cg";
 import styled from "styled-components";

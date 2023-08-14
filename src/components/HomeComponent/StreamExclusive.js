@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-import coverImg2 from '../assets/Grid_Images/Cover_Image2.png';
+import coverImg2 from '../../assets/Grid_Images/Cover_Image2.png';
 
-import AC_final from '../assets/Grid_Images/AC-final.jpg';
-import NS_fotor from '../assets/Grid_Images/NS-fotor.png';
-import PH_fotor from '../assets/Grid_Images/PH-fotor.png';
+import AC_final from '../../assets/Grid_Images/AC-final.jpg';
+import NS_fotor from '../../assets/Grid_Images/NS-fotor.png';
+import PH_fotor from '../../assets/Grid_Images/PH-fotor.png';
 
-import QN_fotor from '../assets/Grid_Images/QN-fotor.png';
-import SS_fotor from '../assets/Grid_Images/SS-fotor.png';
-import WA_fotor from '../assets/Grid_Images/WA-fotor.png';
+import QN_fotor from '../../assets/Grid_Images/QN-fotor.png';
+import SS_fotor from '../../assets/Grid_Images/SS-fotor.png';
+import WA_fotor from '../../assets/Grid_Images/WA-fotor.png';
 
-import KOALA from '../assets/Grid_Images/Koala-fotor.png';
-import Cubie from '../assets/Grid_Images/Cubie.png';
-import Machine from '../assets/Grid_Images/Machine.png';
+import KOALA from '../../assets/Grid_Images/Koala-fotor.png';
+import Cubie from '../../assets/Grid_Images/Cubie.png';
+import Machine from '../../assets/Grid_Images/Machine.png';
 
 
 const Stream_Exclusive = () => {
