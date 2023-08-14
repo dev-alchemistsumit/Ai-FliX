@@ -5,7 +5,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faComment,
   faShare,
-  faUpArrow,
+  faCircleUp,
+  faCircleDown,
   faBookmark,
 } from "@fortawesome/free-solid-svg-icons";
 
@@ -13,30 +14,34 @@ export default function Card(props) {
   const { score, upVoteClicked, downVoteClicked } = props;
 
   return (
-    <div class="card">
-      <div className="cardheader ">
+   <div class="card">
+     <div className="cardheader ">
         <div class="voting-section">
           <div className="voting-section-content">
             <div className="profile-icons m-3">
-              <span
+              {/* <span
                 className="upvote-icon"
                 color="#34eb3a"
                 onClick={upVoteClicked}
               >
                 &#9650;
-              </span>
-
-              <span className="coin-icon"></span>
-              <h3> {props.score}</h3>
-              <span className="downvote-icon" color="#eb3434" onClick={downVoteClicked}>
+              </span> */}
+              <FontAwesomeIcon icon={faCircleUp} color="#55eb34" size="xl" onClick={upVoteClicked} className="card-scorebtn"/>
+              {/* <span className="coin-icon">🪙</span> */}
+              <h3 className="my-3"> {props.score} </h3>
+              {/* <span
+                className="downvote-icon"
+                color="#eb3434"
+                onClick={downVoteClicked}
+              >
                 &#9660;
-              </span>
+              </span> */}
+              <FontAwesomeIcon icon={faCircleDown} color="#eb3434"  size="xl" onClick={downVoteClicked} className="card-scorebtn"/>
             </div>
           </div>
         </div>
-        <ReactPlayer controls autoPlay={true} url={props.videoUrl} className="w-full"/>
+            <ReactPlayer controls autoPlay={true} url={props.videoUrl} />
       </div>
-
 
       <div className="title my-3">
         <div className="card-title">{props.title}</div>
@@ -44,7 +49,7 @@ export default function Card(props) {
       </div>
 
       <div className="flex flex-col p-1">
-        <div className="my-1 md:my-4  flex flex-row justify-center justify-between px-2 md:px-10   ">
+        <div className="my-1 md:my-4  flex flex-row  justify-between px-2 md:px-10   ">
           <div className=" bg-white text-black  card-icon">
             <button className="button-decoration" onClick={handleCommentClick}>
               <FontAwesomeIcon icon={faComment} color="" /> Comment
@@ -59,13 +64,12 @@ export default function Card(props) {
               <FontAwesomeIcon icon={faShare} className="" color="" /> Share
             </button>
           </div>
-
           <div
             className=" bg-white text-black card-icon"
             onClick={handleSaveClick}
           >
             <button className="button-decoration">
-              <FontAwesomeIcon icon={faBookmark} color="" /> Save
+              <FontAwesomeIcon icon={faBookmark} color="" />  Save
             </button>
           </div>
         </div>

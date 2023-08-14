@@ -94,3 +94,37 @@
     margin-left: 5px;
     margin-left: 0px;
   }
+
+//-------------------------------------------------------------------------------------------------------------------------
+
+
+// blue and red  laser beam ready
+    ::-webkit-scrollbar {
+      width: 7px; /* Set the width to your desired height */
+    }
+    
+    /* Style the scrollbar track */
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    
+    /* Style the scrollbar thumb */
+    ::-webkit-scrollbar-thumb {
+      background: linear-gradient(to bottom, #00f, #00f 10%, red);
+      border-radius: 10px; /* Adjust as needed */
+      box-shadow: 0 0 0px 0px #00f; /* Glowing effect */
+      position: relative;
+    }
+    
+    /* Create the laser core */
+    ::-webkit-scrollbar-thumb::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 3px; /* Adjust to center the core */
+      width: 16px; /* Core width */
+      height: 100%;
+      background-color: white; /* Core color */
+      border-radius: 5px; /* Core border radius */
+      box-shadow: 0 0 0px 0px white, 0 0 15px 6px #00f; /* Inner and outer glow */
+    }
