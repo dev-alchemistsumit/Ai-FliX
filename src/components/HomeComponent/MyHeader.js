@@ -1,13 +1,30 @@
-import React, { useState } from "react";
+import React, { useState  } from "react";
 import logo from "../../assets/logo.png";
-import burger from "../../assets/burger.svg";
 import "./Styling/MyHeader.css"; // Create a CSS file for styling
-import { CgMenuLeftAlt, CgClose } from "react-icons/cg";
-import styled from "styled-components";
+import { CgMenuLeftAlt, CgClose, CgLogIn } from "react-icons/cg";
+import  {useHistory}  from "react-router-dom";
+import { auth } from "../../firebase";
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 
 function MyHeader() {
+  const navigate = useNavigate();
+
   const [Nav, setNav] = useState(true);
+  const [isHovered, setIsHovered] = useState(false); // This tracks button hover
+
+  const handleSignOut = async () => {
+    try {
+
+      await auth.signOut();
+      // Redirect to the login page or perform any other desired action
+      // history.push("/login");
+      navigate('/login');
+
+    } catch (error) {
+      console.error("Sign out error:", error);
+    }
+  };
 
   const handleNavFunction = () => {
     setNav(!Nav);
@@ -46,15 +63,27 @@ function MyHeader() {
       </div>
 
       <div className="flex-none flex  ">
-        <div className={!Nav?"  hidden md:block ":"hidden md:block"}>
-        <button className=" text-white text-xl hover:bg-red-700 p-3 m-3 rounded-2xl drop-shadow-2xl">
-          Sign Out
-          <span className="icon text-xl">🚪</span>
-        </button>
-
+        <div className={!Nav ? "  hidden md:block " : "hidden md:block"}>
+          <button
+            className="flex items-center text-white text-xl hover:bg-red-700 p-3 m-3 rounded-2xl drop-shadow-2xl"
+            onMouseEnter={() => setIsHovered(true)} // Set isHovered to true on hover
+            onMouseLeave={() => setIsHovered(false)} // Set isHovered to false on hover exit
+          >
+            <img
+              src={auth.currentUser ? auth.currentUser.photoURL : ""}
+              alt="User"
+              className="w-10 h-10 rounded-full"
+            />
+            {isHovered && ( // Show the logout icon only when hovered
+              <CgLogIn
+                className="m-2 text-white"
+                size={30}
+                onClick={handleSignOut}
+              />
+            )}
+          </button>
         </div>
 
-     
         <div onClick={handleNavFunction} className="block md:hidden">
           {!Nav ? (
             <CgClose className="m-7 text-white" size={30} />
@@ -102,7 +131,11 @@ function MyHeader() {
             </a>
           </li>
           <li className=" hover:bg-red-700 rounded-lg m-5 p-2">
-            <a href="#" className="border-b border-gray-500 m-6 p-2">
+            <a
+              href="#"
+              className="border-b border-gray-500 m-6 p-2"
+              onClick={handleSignOut}
+            >
               Sign Out 🚪
             </a>
           </li>
