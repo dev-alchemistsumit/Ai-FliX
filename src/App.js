@@ -4,7 +4,6 @@ import Home from "./components/HomeComponent/Home";
 import Login from "./components/Login and signup/Login"; // Update the path
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 import Footer from "./components/HomeComponent/Footer";
-import { ThemeProvider } from "styled-components";
 import { auth } from "./firebase"; // Import the auth instance
 
 
@@ -40,12 +39,13 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route path="/" exact>
+          <Route path="/" >
             {console.log(user)}
+            <Home />
             {user ? <Home /> : <Redirect to="/login" />}
             <Footer className="z-[-100]" />
           </Route>
-          <Route path="/login" exact>
+          <Route path="/login" >
             <Login />
           </Route>
         </Switch>
@@ -53,5 +53,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
