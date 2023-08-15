@@ -4,11 +4,10 @@ import "./Styling/MyHeader.css"; // Create a CSS file for styling
 import { CgMenuLeftAlt, CgClose, CgLogIn } from "react-icons/cg";
 import  {useHistory}  from "react-router-dom";
 import { auth } from "../../firebase";
-import {Routes, Route, useNavigate} from 'react-router-dom';
 
 
 function MyHeader() {
-  const navigate = useNavigate();
+  const history = useHistory();
 
   const [Nav, setNav] = useState(true);
   const [isHovered, setIsHovered] = useState(false); // This tracks button hover
@@ -17,9 +16,8 @@ function MyHeader() {
     try {
 
       await auth.signOut();
-      // Redirect to the login page or perform any other desired action
-      // history.push("/login");
-      navigate('/login');
+      history.push('/login')
+
 
     } catch (error) {
       console.error("Sign out error:", error);
