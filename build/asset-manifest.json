@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.fb7bbcc6.css",
-    "main.js": "/static/js/main.dbacee50.js",
-    "static/media/Cover_Image.png": "/static/media/Cover_Image.2aa2ff38a013ce40ca63.png",
+    "main.css": "/static/css/main.6a744600.css",
+    "main.js": "/static/js/main.e595d394.js",
     "static/media/robo_in_space.png": "/static/media/robo_in_space.713bc26f75e5c75806d8.png",
     "static/media/unicorn.png": "/static/media/unicorn.8be84bcda2dd076d068e.png",
     "static/media/WA-fotor.png": "/static/media/WA-fotor.91a270532583483c47ea.png",
@@ -17,24 +16,41 @@
     "static/media/drama.jpg": "/static/media/drama.0aedd7b125854f2dc769.jpg",
     "static/media/NS-fotor.png": "/static/media/NS-fotor.4604599051ebed2cff71.png",
     "static/media/Machine.png": "/static/media/Machine.1ed831cc9388b27f3e99.png",
+    "static/media/two.png": "/static/media/two.bd45e6da428ea63ac264.png",
+    "static/media/six.png": "/static/media/six.30580e6e5648b2882290.png",
+    "static/media/three.png": "/static/media/three.e4725c9cc7e892a95bfd.png",
+    "static/media/five.png": "/static/media/five.fad2c44fb83f0aa66ad0.png",
+    "static/media/eight.png": "/static/media/eight.7adbd9e1d76608f53e48.png",
     "static/media/Koala-fotor.png": "/static/media/Koala-fotor.baef9fb754a08ee1fdfb.png",
+    "static/media/ten.png": "/static/media/ten.b4c831c2654cb8930d1e.png",
+    "static/media/four.png": "/static/media/four.56e72800ea5547a4d3d6.png",
+    "static/media/nine.png": "/static/media/nine.56affed7d9efe74c0851.png",
     "static/media/thriller.png": "/static/media/thriller.5a0d77a44ae8e0318e34.png",
+    "static/media/seven.png": "/static/media/seven.ee9a10dfad54107edff2.png",
+    "static/media/one.png": "/static/media/one.0e3e42204211a585b210.png",
     "static/media/action.png": "/static/media/action.10e576784367ed909570.png",
+    "static/media/thirteen.png": "/static/media/thirteen.084dfeec8413a1872d63.png",
+    "static/media/twelve.png": "/static/media/twelve.29b9a195a8196cf083bb.png",
+    "static/media/eleven.png": "/static/media/eleven.08a085757449a3eb0a64.png",
     "static/media/firedragon.jpg": "/static/media/firedragon.0a211d0bf5744a2fc667.jpg",
+    "static/media/Ai.png": "/static/media/Ai.907138027202fbe372b6.png",
     "static/media/sci-fi.jpg": "/static/media/sci-fi.d84e3f73fd3a04fa5b62.jpg",
     "static/media/AC-final.jpg": "/static/media/AC-final.26348830c86707a31a76.jpg",
+    "static/media/Cover_Image2.png": "/static/media/Cover_Image2.4ad501b4438e01e1ff43.png",
+    "static/media/horror.jpg": "/static/media/horror.0bb424ade33faa239b98.jpg",
     "static/media/love_story.png": "/static/media/love_story.5578baf541a38259f3a7.png",
+    "static/media/logo-border.png": "/static/media/logo-border.92667a09d79a16fd9b03.png",
     "static/media/logo.png": "/static/media/logo.970797273a48f626a92b.png",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.fb7bbcc6.css.map": "/static/css/main.fb7bbcc6.css.map",
-    "main.dbacee50.js.map": "/static/js/main.dbacee50.js.map"
+    "main.6a744600.css.map": "/static/css/main.6a744600.css.map",
+    "main.e595d394.js.map": "/static/js/main.e595d394.js.map"
   },
   "entrypoints": [
-    "static/css/main.fb7bbcc6.css",
-    "static/js/main.dbacee50.js"
+    "static/css/main.6a744600.css",
+    "static/js/main.e595d394.js"
   ]
 }
