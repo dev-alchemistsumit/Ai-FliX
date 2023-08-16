@@ -33,7 +33,7 @@ function MyHeader() {
       <div className=" flex">
         <img src={logo} alt="Logo" className="logo md:h-full " />
       </div>
-      <div className="hidden md:flex flex-1   mt-1 drop-shadow-2xl ">
+      <div className="hidden md:flex flex-1  mt-1 drop-shadow-2xl ">
         <nav className="nav-menu uppercase ">
           <ul>
             <li className=" hover:bg-red-700">
@@ -93,45 +93,45 @@ function MyHeader() {
       <div
         className={
           !Nav
-            ? "z-[100] text-center text-white fixed left-0 top-0 h-auto  rounded-md  border-r-red-200  bg-gray-900 p-2 ease-in-out duration-300 "
-            : "fixed hidden left-[-100]  "
+            ? "z-[100] text-center text-white fixed left-0 top-0 h-auto  rounded-md  border-r-red-200 mobile-headercontainer p-2 ease-in-out duration-300 "
+            : "fixed hidden left-[-100]   "
         }
       >
-        <ul className=" uppercase m-5 text-center ">
-          <li className=" hover:bg-red-700 rounded-lg m-6 p-2">
-            <a href="#" className=" border-b border-gray-500 m-6 p-2">
+        <ul className=" uppercase m-5 text-center font-serif  ">
+          <li className=" hover:bg-red-700  rounded-lg m-6 p-2">
+            <a href="#" className=" border-b border-black text-black m-6 p-2 font-bold">
               Home 🏠
             </a>
           </li>
-          <li className="hover:bg-red-700  rounded-lg m-6 p-2">
-            <a href="#" className="border-b border-gray-500 m-6 p-2">
+          <li className="hover:bg-red-700   rounded-lg m-6 p-2">
+            <a href="#" className="border-b border-black m-6 p-2 text-black font-bold">
               Search 🔍
             </a>
           </li>
-          <li className=" hover:bg-red-700 rounded-lg  m-6 p-2">
-            <a href="#" className="border-b border-gray-500 m-6 p-2">
+          <li className=" hover:bg-red-700  rounded-lg  m-6 p-3">
+            <a href="#" className="border-b border-black m-6 p-2 text-black font-bold">
               Watchlist 📺
             </a>
           </li>
           <li className=" hover:bg-red-700  rounded-lg m-5 p-2">
-            <a href="#" className="border-b border-gray-500 m-6 p-2">
+            <a href="#" className="border-b border-black m-6 p-2 text-black font-bold">
               Originals 🎬
             </a>
           </li>
-          <li className=" hover:bg-red-700 rounded-lg  m-5 p-2">
-            <a href="#" className="border-b border-gray-500 m-6 p-2">
+          <li className=" hover:bg-red-700  rounded-lg  m-5 p-2">
+            <a href="#" className="border-b border-black m-6 p-2 text-black font-bold">
               Movies 🍿
             </a>
           </li>
           <li className=" hover:bg-red-700 rounded-lg m-5 p-2">
-            <a href="#" className="border-b border-gray-500 m-6 p-2">
+            <a href="#" className="border-b border-black m-6 p-2 text-black font-bold">
               Series 📺
             </a>
           </li>
           <li className=" hover:bg-red-700 rounded-lg m-5 p-2">
             <a
               href="#"
-              className="border-b border-gray-500 m-6 p-2"
+              className="border-b border-black m-6 p-2 text-black font-bold"
               onClick={handleSignOut}
             >
               Sign Out 🚪

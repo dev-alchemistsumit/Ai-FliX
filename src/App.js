@@ -11,6 +11,7 @@ import {
 import Footer from "./components/HomeComponent/Footer";
 import { auth } from "./firebase";
 
+
 function App() {
   const [user, setUser] = useState(null);
 
