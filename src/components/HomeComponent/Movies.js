@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useMemo } from "react";
 import styled from "styled-components";
 import {
@@ -9,24 +8,14 @@ import {
   updateDoc,
   doc,
 } from "firebase/firestore";
-import { getDatabase, ref, onValue, set , } from "firebase/database";
-import Card from "../reddit_Components/Card";
-import { initializeApp } from "firebase/app";
+import Card from "../../reddit_Components/Card";
 
-function Movies() {
-  const firebaseConfig = {
-    apiKey: "AIzaSyDuoPwHRZ_T5IcivnhBcel1guYgcUe0dJ0",
-    authDomain: "ai-flix-678f3.firebaseapp.com",
-    projectId: "ai-flix-678f3",
-    storageBucket: "ai-flix-678f3.appspot.com",
-    messagingSenderId: "393754793668",
-    appId: "1:393754793668:web:c5f14ac85f353701c55b91",
-  };
+import db from "../../firebase";
 
-  // initializeApp(firebaseConfig);
-  initializeApp(firebaseConfig);
+export default function Movies() {
 
-  const db = getFirestore();
+
+   getFirestore();
   const colRef = collection(db, "Movies");
 
   const [movieData, setMovieData] = useState([]);
@@ -48,7 +37,6 @@ function Movies() {
       unsubscribe();
     };
   }, []);
-
 
   function UpVoteClick(index) {
     const updatedMovieData = [...movieData];
@@ -87,11 +75,15 @@ function Movies() {
   }
   return (
     <Container>
-      <h1 className="flex flex-initial m-3 text-3xl font-serif text-white"> Latest Movies </h1>
-      <Content >
+      <h1 className="flex flex-initial m-3 text-3xl font-serif text-white">
+        {" "}
+        Latest Movies{" "}
+      </h1>
+      <Content>
         {movieData.map((doc, index) => (
-          <CardStyling key={doc.id}  className="flex justify-center">
-            <Card className="justify-center"
+          <CardStyling key={doc.id} className="flex justify-center">
+            <Card
+              className="justify-center"
               title={doc.title}
               videoUrl={doc.videoUrl}
               desc={doc.desc}
@@ -106,15 +98,12 @@ function Movies() {
   );
 }
 
-export default Movies;
 
 const Container = styled.div`
   padding: 0 20px 26px;
 `;
 
-const CardStyling = styled.div`
-  
-`;
+const CardStyling = styled.div``;
 
 const Content = styled.div`
   display: grid;

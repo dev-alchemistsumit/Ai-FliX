@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import logoborder from "../assets/logo-border.png";
+import logoborder from "../../assets/logo-border.png";
 
 const Footer = () => {
   return (

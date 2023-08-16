@@ -1,24 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { getFirestore, collection, onSnapshot, updateDoc, doc } from 'firebase/firestore';
-import Card from '../reddit_Components/Card';
-import { initializeApp } from "firebase/app";
+import Card from '../../reddit_Components/Card';
+import db from "../../firebase";
+
 
 export default function Trending() {
-    const firebaseConfig = {
-      apiKey: "AIzaSyDuoPwHRZ_T5IcivnhBcel1guYgcUe0dJ0",
-      authDomain: "ai-flix-678f3.firebaseapp.com",
-      projectId: "ai-flix-678f3",
-      storageBucket: "ai-flix-678f3.appspot.com",
-      messagingSenderId: "393754793668",
-      appId: "1:393754793668:web:c5f14ac85f353701c55b91"
-      };
-
-  // initializeApp(firebaseConfig);
-initializeApp(firebaseConfig);
 
 
-  const db = getFirestore();
+   getFirestore();
   const colRef = collection(db, 'Trending');
 
   const [TrendingData, setTrendingData] = useState([]);

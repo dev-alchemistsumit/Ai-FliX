@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import React from "react";
-import sci_fi from "../assets/img slider/genres/sci-fi.jpg";
-import action from "../assets/img slider/genres/action.png";
-import thriller from "../assets/img slider/genres/thriller.png";
-import drama from "../assets/img slider/genres/drama.jpg";
-import love_story from "../assets/img slider/genres/love_story.png";
-import horror from "../assets/img slider/genres/horror.jpg";
+import sci_fi from "../../assets/img slider/genres/sci-fi.jpg";
+import action from "../../assets/img slider/genres/action.png";
+import thriller from "../../assets/img slider/genres/thriller.png";
+import drama from "../../assets/img slider/genres/drama.jpg";
+import love_story from "../../assets/img slider/genres/love_story.png";
+import horror from "../../assets/img slider/genres/horror.jpg";
 
 const Container = styled.div`
   padding: 2rem;

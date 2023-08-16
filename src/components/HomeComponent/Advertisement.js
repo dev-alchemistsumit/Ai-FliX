@@ -1,6 +1,7 @@
 import React from 'react'
-import logoborder from "../assets/logo-border.png";
+import logoborder from "../../assets/logo-border.png";
 import styled from 'styled-components'
+
 
 function Advertisement() {
   return (
