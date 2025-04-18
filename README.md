@@ -2,24 +2,9 @@ AiFlix (Online Mp4 Rating Management System)
 - React.js and Redux based Reddit like Mp4 Rating Management System using Firebase as the database.
 - Hosting and Authentication Services provided by Google Firebase API's.
 
-
-![](https://img.shields.io/website-up-down-green-red/http/monip.org.svg)</a>
-![](https://img.shields.io/badge/Maintained-Yes-indigo)
-![](https://img.shields.io/github/issues/SashenJayathilaka/Disney-Plus-Clone)
-![](https://img.shields.io/github/last-commit/SashenJayathilaka/Disney-Plus-Clone)
-
-
-
 <div style="display: inline_block" align="center"><br>
 
 ## <a href="https://ai-flix-678f3.web.app/" target="_blank">Live Demo </a>
-
-
-![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
-![forthebadge](https://forthebadge.com/images/badges/for-you.svg)
-![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)
-
-
 
 ### :space_invader: Tech Stack
 
